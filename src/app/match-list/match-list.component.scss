@@ -1,0 +1,127 @@
+.header-section{
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    padding: 12px 0px 12px 35px;
+}
+.match-date{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding: 16px 0px 00px 0px;
+    text-align: center !important;
+}
+span{
+font-weight: 500;
+}
+.date-btn{
+    background-color: #e1e1e1;
+    border-radius: 20px ;
+    cursor: pointer;
+    padding:8px 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.date-active{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px ;
+    padding:8px 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.select-option{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px 30px 0px 30px;
+}
+.bottom-section{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.bet-builder{
+    color: red;
+    font-weight: 600;
+}
+.select-label{
+    font-weight: 700;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+th{
+    color: red;
+    background-color: #ced3d8;
+}
+tr:nth-child(even) {
+    background-color: #ced3d8;
+}
+
+.bet-text{
+    padding-left: 20px;
+}
+.table-row{
+    border-top-left-radius: 10px
+}
+.table-head{
+    border-top-right-radius: 10px;
+}
+.match-background{
+    background-color: #f7f6f6 !important;
+    padding: 10px 10px !important;
+    text-align: center;
+    cursor: pointer;
+}
+.table-border{
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.date-time{
+    font-weight: 500;
+    font-size: 18px;
+}
+.date-times{
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 18px;
+}
+.back-btn{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size:35px;
+    color:red;
+    cursor: pointer;
+}
+.match-title{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.table-title{
+    background-color: red;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.match-time{
+    opacity: 0.6;
+}
+.market-data{
+    border-left: 1px solid #e7e1e1; 
+    border-right: 1px solid #e7e1e1; 
+    opacity: 0.6;
+
+}
+.match-name {
+    background: -webkit-linear-gradient(125deg, red 40%, black 40%);
+    background: -o-linear-gradient(125deg, red 40%, black 40%);
+    background: -moz-linear-gradient(125deg, red 40%, black 40%);
+    background: linear-gradient(125deg, red 40%, black 40%);
+    color: white;
+    font-size: 15px;
+    padding: 7px 0px 7px 0px;
+    display: flex;
+    justify-content: space-around;
+  }
