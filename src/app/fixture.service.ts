@@ -25,7 +25,5 @@ export class FixtureService {
 
   getBuilderList(sports:any, matchId:any,marketId:any,legs:any,language:any,body:any){
     return this.http.get<any>(this.apiBaseUrl+"/GetBetBuilderBets"+"?sports="+sports+"&matchId="+matchId+"&marketId="+marketId+"&legs="+legs+"&language="+language,body);
-
-    // return this.http.post<any>(this.apiBaseUrl+"/GetBuilderBets/"+"?sports="+sports+"&matchId="+matchId+"&marketId="+marketId+"&legs="+legs+"&lenguage="+lenguage);
   }
 }

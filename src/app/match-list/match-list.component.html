@@ -70,26 +70,25 @@
 
   <div *ngIf="!loading">
   <div *ngIf="view_match">
-    <div class="mt-4 px-4">
+    <div class="mt-4 px-2">
     <span *ngFor="let date of nextDate let i= index">
-      <!-- <span *ngIf= "i == index && date_flag" [ngClass]="date_flag ? 'date-active':'date-btn'" (click)="getfilteredList(i)" >{{date | date: 'EEE:MMMM:d'}}</span> -->
-    <input type="text" disabled [ngClass]="date_flag ? 'date-active':'date-btn'" (keyup)="getfilteredList($event)" [value]= "date">
+      <!-- <span [ngClass]="date_flag ? 'date-active':'date-btn'" (click)="getfilteredList(i,date)" >{{date | date: 'EEE'}}<span>{{date | date: 'MMMM:d'}}</span></span> -->
+      <span class="date-btn" (click)="getfilteredList(i)" >{{date | date: 'EEE'}} <span>{{date | date: 'MMMM:d'}}</span></span>
     </span>
   </div>
 
     <h5 class="mt-4 px-4"> <i class="fa fa-soccer-ball-o" style="font-size:21px;color: #3131d4;"></i>
       {{matchTitle}}</h5>
-  <div class="table-border">
+  <div class="table-border mb-4">
   <table class="table">
     <tbody>
-      
-      <tr *ngFor="let item of matchList" (click)="viewMatch(item.MatchId)">     
+      <tr>
+        <div class="td-date"></div>    
+      </tr>
+      <tr *ngFor="let item of matchList" (click)="viewMatch(item.MatchId)"> 
         <div  class="table-title"><span>{{item?.Country}}</span> <span> - </span><span>{{item?.LeagueName}}</span></div>
         <div class="match-background"> <span>{{item?.Team1Name}} </span><span class="match-time"> {{item?.MatchTime | slice:0:5}} </span><span> {{item?.Team2Name}}</span></div>
-      </tr>
-      <!-- <tr *ngFor="let item of matchList" (click)="viewMatch(item.MatchId)" >     
-        <td class="match-background"> <span>{{item?.Team1Name}} </span><span class="match-time"> {{item?.MatchTime | slice:0:5}} </span><span> {{item?.Team2Name}}</span></td>
-        </tr> -->
+      </tr> 
     </tbody>
   </table>
 </div>

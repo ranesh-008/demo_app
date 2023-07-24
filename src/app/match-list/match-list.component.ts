@@ -48,19 +48,10 @@ export class MatchListComponent implements OnInit {
     // console.log('date',this.nextDate);
     }
   }
-  getfilteredList(event:any){ 
-    alert()
-    this.date_flag =true;
-    this.newList =event.target.value;
-    // if(this.index == i && this.date_flag){
-    //   this.index =null;
-    //  }else{
-    //    this.date_flag  = true;
-    //    this.index = i;
-    //  }
-    console.log('date',this.newList);
-    
 
+  getfilteredList(index:any){ 
+    this.date_flag =true;
+    // console.log('date',this.newList);
   }
  
   getList(){ 
